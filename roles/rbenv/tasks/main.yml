@@ -1,1 +1,12 @@
----
+# brew setting taps
+- name: include env vars
+  include_vars: "brewTapList.yml"
+- include: "{{ installer_brew }}"
+
+# brew install packages
+- name: include env vars
+  include_vars: "rbEnvBrewPackages.yml"
+- include: "{{ installer_brew_package }}"
+
+# setting bash_profile
+- include: setBashProfile.yml
