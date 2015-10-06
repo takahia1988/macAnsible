@@ -1,0 +1,9 @@
+- name: リポジトリを追加
+  homebrew_tap: tap={{ item.name }} state=present
+  with_items: homebrew_taps
+  when:
+    - homebrew_taps is defined
+    - homebrew_taps | length > 0
+
+- name: homebrew をアップデート
+  homebrew: update_homebrew=yes

@@ -1,0 +1,4 @@
+---
+# common setting for mac and development environment
+- include: common.yml
+- include: macSetting.yml

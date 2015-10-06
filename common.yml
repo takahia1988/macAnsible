@@ -1,0 +1,10 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  vars_files:
+    - ./baseSetting.yml
+  sudo: no
+  roles:
+    - common
+  handlers:
+    - include: "{{ common_handler }}"

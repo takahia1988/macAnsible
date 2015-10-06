@@ -1,0 +1,12 @@
+# path for root
+root_path: "/Users/takahiro.hiasa/ansibleWork/initialSetup"
+
+# path for other
+info_path: "{{ root_path }}/info/"
+installer_brew: "{{ root_path }}/roles/common/tasks/homebrewDepends.yml"
+installer_brew_package: "{{ root_path }}/roles/common/tasks/brewPakcagesInstaller.yml"
+installer_cask_package: "{{ root_path }}/roles/common/tasks/caskPackagesInstaller.yml"
+installer_gem_package: "{{ root_path }}/roles/common/tasks/gemPackagesInstaller.yml"
+
+# path for all handler
+common_handler: "{{ root_path }}/roles/common/handlers/main.yml"

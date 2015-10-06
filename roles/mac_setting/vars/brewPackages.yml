@@ -1,0 +1,17 @@
+---
+homebrew_packages:
+  - { name: python }
+  - { name: ansible }
+  - { name: git }
+  - { name: wget }
+  - { name: curl }
+  - { name: tree }
+  - { name: nkf }
+  - { name: go }
+  - { name: rbenv }
+  - { name: ruby-build }
+  - { name: rbenv-gemset }
+  - { name: rbenv-gem-rehash }
+  - { name: readline }
+  - { name: openssl }
+  - { name: libiconv }

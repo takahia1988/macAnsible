@@ -1,0 +1,19 @@
+# brew setting taps
+- name: include env vars
+  include_vars: "brewTapList.yml"
+- include: "{{ installer_brew }}"
+
+# brew install packages
+- name: include env vars
+  include_vars: "brewPackages.yml"
+- include: "{{ installer_brew_package }}"
+
+# brew install cask packages
+- name: include env vars
+  include_vars: "brewCaskPackages.yml"
+- include: "{{ installer_cask_package }}"
+
+# gem install packages
+- name: include env vars
+  include_vars: "gemPackages.yml"
+- include: "{{ installer_gem_package }}"

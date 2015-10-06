@@ -1,0 +1,9 @@
+---
+homebrew_cask_packages:
+  - { name: firefox }
+  - { name: google-chrome }
+  - { name: adobe-reader }
+  - { name: sourcetree }
+  - { name: atom }
+  - { name: intellij-idea }
+  - { name: vagrant }

@@ -1,0 +1,11 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  vars_files:
+    - "./baseSetting.yml"
+  sudo: no
+  roles:
+    - role: mac_setting
+      role_name: mac_setting
+  handlers:
+    - include: "{{ common_handler }}"
