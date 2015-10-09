@@ -1,0 +1,4 @@
+---
+homebrew_packages:
+  - { name: readline }
+  - { name: apple-gcc42 }

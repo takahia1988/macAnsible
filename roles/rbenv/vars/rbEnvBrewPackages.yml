@@ -1,0 +1,6 @@
+---
+homebrew_packages:
+  - { name: rbenv }
+  - { name: ruby-build}
+  - { name: rbenv-gemset}
+  - { name: rbenv-gem-rehash}

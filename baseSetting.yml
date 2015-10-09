@@ -1,5 +1,6 @@
 # path for root
-root_path: "/Users/takahiro.hiasa/ansibleWork/initialSetup"
+# Please set root path
+root_path: ""
 
 # path for other
 info_path: "{{ root_path }}/info/"

@@ -1,0 +1,11 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  vars_files:
+    - "./baseSetting.yml"
+  sudo: no
+  roles:
+    - role: rbenv
+      role_name: rbenv_setting
+  handlers:
+    - include: "{{ common_handler }}"
